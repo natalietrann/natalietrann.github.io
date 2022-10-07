@@ -1,0 +1,296 @@
+*{
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family:'groteskbold';
+    src: url("ManifontGroteskBold-webfont.woff") format("woff");
+}
+@font-face {
+    font-family:'groteskbook';
+    src: url("ManifontGroteskbook-webfont.woff") format("woff");
+}
+@font-face {
+    font-family:'dot';
+    src: url("ManifontGroteskBookDot-webfont.woff") format("woff");
+}
+
+div.container{
+    display:flex;
+    height: 100%;
+    /* flex-direction:row; */
+    flex-wrap:wrap;
+    /* align-items:flex-end; */
+    align-items: flex-start;
+    /* justify-content: flex-end; */
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    background-color: black;
+}
+    
+
+
+/* div.container2{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+} */
+
+div.words{
+    font-family:"groteskbold";
+    font-size:100px;
+    color: white;
+    padding:50px;
+    /* font-family:arial; */
+    width:49%;
+    height:500px;
+    border:1px solid white;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+
+div.words.scent{
+    font-family:"groteskbold";
+    font-size:100px;
+    color: white;
+    /* filter: blur(2px); */
+    padding:50px;
+    /* font-family:arial; */
+    width:49%;
+    height:500px;
+    background-color: rgba(0, 0, 0, 1);
+    border:1px solid white;
+    position: relative;
+    z-index: 10;
+}
+
+.dot{
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+ 
+.dot{
+    animation-name: jittery;
+}
+
+div.word.blur{
+    font-family: "groteskbold";
+    padding:50px;
+    filter: blur(3px);
+    /* background-color:red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+    top: 0px;
+    left:0px;
+    z-index: 10;
+
+}
+
+div.word.blur2{
+    font-family: "groteskbook";
+    padding:50px;
+    /* background-color:red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    filter: blur(7px);
+    top: 0px;
+    left:0px;
+    z-index: 10;
+
+}
+
+
+div.time{
+    font-family: "groteskbook";
+    font-size: 15px;
+    padding:20px;
+    /* background-color:red; */
+    /* height: 100%;
+    width: 100%; */
+    position: absolute;
+    top: 90%;
+    right: 20px;
+}
+
+div.overlay{
+    font-family: dot;
+    font-size: 110;
+    filter: none;
+    padding:50px;
+    /* background-color:red; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right:20px;
+    z-index: 10;
+    line-height: 0.8;
+}
+
+div.decay{
+    display:flex;
+    flex-wrap:wrap;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: black;
+
+
+}
+
+div.one{
+    font-family:"dot";
+    font-size:100px;
+    color: white;
+    padding:50px;
+    width:800px;
+    position:absolute;
+    top:500px;
+    left:70px;
+    opacity: 30%;
+   
+}
+
+div.two{
+    font-family:"dot";
+    font-size:100px;
+    color: white;
+    padding:50px;
+    width:800px;
+    position:absolute;
+    top:500px;
+    left:880px;
+    opacity:80%;
+ 
+   
+}
+
+.overlay{
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    z-index: 10;
+}
+ 
+.overlay {
+    animation-name: jittery;
+}
+
+
+
+div.three{
+    font-family:"dot";
+    font-size:110px;
+    color: white;
+    padding:50px;
+    width:800px;
+    height:500px;
+    position:absolute;
+    top:990px;
+    left:70px;
+   
+}
+
+.three{
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+ 
+.three {
+    animation-name: jittery;
+}
+div.threedots{
+    font-family:"dot";
+    padding:50px;
+    width:800px;
+    height:500px;
+    font-size:110px;
+    color: white;
+    position:absolute;
+    top:990px;
+    left:60px;
+   
+}
+
+.threedots{
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+ 
+.threedots:hover {
+    animation-name: jittery;
+}
+
+div.four{
+    font-family:"dot";
+    font-size:100px;
+    color: white;
+    padding:50px;
+    width:800px;
+    height:500px;
+    position:absolute;
+    top:1000px;
+    left:880px;
+   
+}
+
+.four{
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+ 
+.four {
+    animation-name: jittery;
+}
+
+
+@keyframes jittery {
+    10% {
+        transform: translate(-1px, -2px) ;
+    }
+    20% {
+        transform: translate(2px, 1px) ;
+    }
+    30% {
+        transform: translate(-2px, -3px) ;
+    }
+    40% {
+        transform: translate(1px, 2px) ;
+    }
+    50% {
+        transform: translate(-1px, -2px) ;
+    }
+    60% {
+        transform: translate(0px, 2px) ;
+    }
+    70% {
+        transform: translate(-1px, -3px) ;
+    }
+    80% {
+        transform: translate(2px, 3px) ;
+    }
+    90% {
+        transform: translate(-3px, -2px) ;
+    }
+    100% {
+        transform: translate(2px, 0px) ;
+    }
+}
