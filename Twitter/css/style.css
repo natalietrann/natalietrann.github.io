@@ -1,0 +1,66 @@
+body{
+    box-sizing:border-box;
+
+}
+
+
+@font-face {
+    font-family:'ft88expanded';
+    src: url("FT88-Expanded.woff") format("woff");
+}
+@font-face {
+    font-family:'ft88school';
+    src: url("FT88-School.woff") format("woff");
+}
+
+@font-face {
+    font-family:'meyrin';
+    src: url("Meyrin.woff") format("woff");
+}
+
+
+div.container{
+    display:flex;
+    height: 100%;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    
+}
+
+div.honda{
+    margin-top: 300px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 150px;
+    letter-spacing: -15px;;
+    text-align: center;
+
+}
+
+div.rna{
+    font-family: "ft88expanded";
+    font-size: 100px;
+    letter-spacing: -15px;;
+    text-align: center;
+
+}
+
+div.new{
+    font-family: "ft88school";
+    text-align: center;
+    width: 350px;
+    padding: 15px;
+    font-size: 120px;
+    border:1px solid black;
+    border-radius: 10cm;
+    transform: rotate(20deg);
+    background-color: white;
+    color:blue;
+    position: absolute;
+    top:250px;
+    right: 150px;
+    
+}
+
