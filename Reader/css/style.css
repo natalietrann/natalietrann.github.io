@@ -4,7 +4,7 @@
 
 body{
    
-    background-color: skyblue;
+    background-color: black;
 
 }
 
@@ -12,10 +12,39 @@ img{
     width: 100%;
 }
 
-div.container{
+div.page{
     display:flex;
     flex-wrap:wrap;
 }
+
+div.title{
+    font-size: 20px;
+    color:blue;
+    /* white-space: pre; */
+    width:100%;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+div.author{
+    color:white;
+    width:100%;
+    text-align: center;
+    background-color: aquamarine;
+}
+div.container{
+    display:flex;
+    flex-wrap:wrap;
+    width: 50%;
+}
+div.seeingbody{
+    line-height: 30px;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size:20px;
+    /* font-weight:200; */
+}
+
 
 a.thumbnail{
     font-size: 20px;
@@ -26,3 +55,4 @@ a.thumbnail{
     width:25%;
     margin: 10px;
 }
+
