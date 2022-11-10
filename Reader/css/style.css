@@ -5,8 +5,18 @@
 body{
    
     background-color: black;
-
 }
+
+@font-face {
+    font-family:'sourcecodereg';
+    src: url("SourceCodePro-regular.otf.woff") format("woff");
+}
+
+@font-face {
+    font-family:'sourcecodelight';
+    src: url("SourceCodePro-light.otf.woff") format("woff");
+}
+
 
 img{
     width: 100%;
@@ -18,29 +28,36 @@ div.page{
 }
 
 div.title{
-    font-size: 20px;
-    color:blue;
-    /* white-space: pre; */
-    width:100%;
-    text-align: center;
-    background-color: aliceblue;
-}
-
-div.author{
+    font-size: 13px;
     color:white;
     width:100%;
+    padding-top: 80px;
     text-align: center;
-    background-color: aquamarine;
+    /* background-color: aliceblue; */
+    font-family: "sourcecodereg";
 }
+
 div.container{
     display:flex;
+    margin-left: 80px;
     flex-wrap:wrap;
     width: 50%;
 }
-div.seeingbody{
+
+div.author{
+    font-size: 13px;
+    color:white;
+    width:100%;
+    padding-bottom: 200px;
+    text-align: center;
+    /* background-color: aquamarine; */
+    font-family: "sourcecodereg";
+}
+
+div.para{
     line-height: 30px;
     color: white;
-    font-family:'Courier New', Courier, monospace;
+    font-family:"sourcecodelight";
     font-size:20px;
     /* font-weight:200; */
 }
