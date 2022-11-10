@@ -9,12 +9,12 @@ body{
 
 @font-face {
     font-family:'sourcecodereg';
-    src: url("SourceCodePro-regular.otf.woff") format("woff");
+    src: url("SourceCodePro- Regular.otf.woff") format("woff");
 }
 
 @font-face {
     font-family:'sourcecodelight';
-    src: url("SourceCodePro-light.otf.woff") format("woff");
+    src: url("SourceCodePro-Light.otf.woff") format("woff");
 }
 
 
