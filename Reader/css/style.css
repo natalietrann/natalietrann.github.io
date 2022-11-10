@@ -91,3 +91,8 @@ a.thumbnail{
     margin: 10px;
 }
 
+
+#subculture{
+    /* width: auto; */
+    display:inline;
+}
