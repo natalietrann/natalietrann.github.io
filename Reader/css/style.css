@@ -59,7 +59,25 @@ div.para{
     color: white;
     font-family:"sourcecodelight";
     font-size:20px;
+    z-index: 30;
     /* font-weight:200; */
+}
+
+div.woman{
+    width:40%;
+    /* display:flex; */
+    position: absolute;
+    z-index: 8;
+    margin-top: 500px;
+    margin-left: 50%;
+}
+
+div.starlink{
+    width:25%;
+    position: absolute;
+    z-index: 10;
+    top:50px;
+    right:200px;
 }
 
 
